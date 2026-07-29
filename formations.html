@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formations & Compétences – Marcos Portela</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ANIMATIONS APPLE -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+
+    .lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 40px;
+      margin-top: 15px;
+    }
+
+    .lang-grid p {
+      margin: 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="fade-in fade-delay-1">
+  <a href="index.html">Présentation</a>
+  <a href="parcours.html">Parcours</a>
+  <a href="formations.html">Formations</a>
+  <a href="objectifs.html">Objectifs</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header class="fade-in fade-delay-2">
+  <h1>Formations & Compétences</h1>
+  <p>Finance • Données • Analyse • Performance</p>
+</header>
+
+<div class="container">
+
+  <!-- FORMATIONS -->
+  <div class="card fade-in fade-delay-2">
+    <h2 class="section-title">Formations</h2>
+
+    <h3>MBA Finance & Data Performance (Niveau 7 – Bac+5)<br>ESLSCA Paris Business School — France</h3>
+    <p><strong>Admission 2026 – Rentrée d'octobre 2026</strong></p>
+    <p>
+      Formation spécialisée en finance quantitative, data science et transformation digitale de la finance.
+      Elle développe des compétences en analyse de données, modélisation financière, gestion des risques,
+      Big Data, Machine Learning, Python, SQL, Power BI et aide à la décision appliquée aux métiers de la
+      banque, de la finance et des marchés financiers.
+    </p>
+
+    <hr style="margin:25px 0; opacity:0.3;">
+
+    <h3>Licence en Administration des Entreprises (Niveau 6 – Bac+4)<br>UNIFG – Faculdade dos Guararapes — Brésil</h3>
+    <p><strong>Diplôme reconnu en France par ENIC-NARIC (équivalent Licence – niveau 6 du Cadre européen des certifications)</strong></p>
+    <p>
+      Formation en management et administration des entreprises couvrant notamment la stratégie, la finance,
+      la comptabilité, le contrôle de gestion, le marketing, les ressources humaines, la logistique et la gestion
+      de projets. Elle développe des compétences en analyse, prise de décision, pilotage d'activités et gestion
+      des organisations.
+    </p>
+  </div>
+
+  <!-- LANGUES -->
+  <div class="card fade-in fade-delay-3">
+    <h2 class="section-title">Langues</h2>
+
+    <div class="lang-grid">
+      <p><strong>Portugais :</strong> Langue maternelle</p>
+      <p><strong>Français :</strong> Bilingue</p>
+      <p><strong>Espagnol :</strong> C2</p>
+      <p><strong>Anglais :</strong> B1</p>
+    </div>
+  </div>
+
+  <!-- COMPÉTENCES TECHNIQUES -->
+  <div class="card fade-in fade-delay-3">
+    <h2 class="section-title">Compétences techniques</h2>
+
+    <div class="skills">
+      <span>Analyse financière</span>
+      <span>Modélisation</span>
+      <span>Gestion des risques</span>
+      <span>KYC / LCB‑FT</span>
+      <span>Contrôle documentaire</span>
+      <span>Qualité des données</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Machine Learning</span>
+      <span>Big Data</span>
+      <span>Optimisation des processus</span>
+      <span>Relation client</span>
+    </div>
+  </div>
+
+  <!-- ATOUTS -->
+  <div class="card fade-in fade-delay-3">
+    <h2 class="section-title">Atouts professionnels</h2>
+
+    <p>Rigueur, pédagogie, écoute active, adaptabilité, esprit analytique, gestion de situations sensibles, coordination entre interlocuteurs.</p>
+
+    <p>Capacité à transformer des informations administratives ou financières en données fiables utilisables pour la décision.</p>
+
+    <p>Expérience dans des environnements réglementés, sensibles, multiacteurs et nécessitant une forte qualité de service.</p>
+  </div>
+
+</div>
+
+<footer class="fade-in fade-delay-3">
+  © 2026 — Marcos Portela
+</footer>
+
+</body>
+</html>
