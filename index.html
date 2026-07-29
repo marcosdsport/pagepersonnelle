@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Marcos Portela – Profil Professionnel</title>
+  <title>Marcos Portela – Page Professionnelle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
@@ -31,26 +31,64 @@
       opacity: 0.9;
     }
 
+    nav {
+      background: #0d132e;
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    nav a {
+      color: #d4af37;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
       padding: 40px 20px;
     }
 
     h2 {
       color: #d4af37;
-      border-left: 5px solid #d4af37;
-      padding-left: 10px;
-      margin-top: 40px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
-    .section {
+    /* Accordéons */
+    .accordion {
       background: #11162f;
-      padding: 25px;
-      border-radius: 10px;
-      margin-bottom: 30px;
+      color: #f5f5f5;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
       border: 1px solid #1c2347;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: 0.4s;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .active, .accordion:hover {
+      background-color: #1c2347;
+    }
+
+    .panel {
+      padding: 0 18px;
+      background-color: #0d132e;
+      display: none;
+      overflow: hidden;
+      border-radius: 6px;
+      border: 1px solid #1c2347;
+      margin-bottom: 20px;
     }
 
     .skills span {
@@ -63,16 +101,6 @@
       font-weight: bold;
     }
 
-    a {
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     .cv-button {
       display: inline-block;
       padding: 12px 20px;
@@ -82,6 +110,32 @@
       text-decoration: none;
       margin-top: 10px;
       font-weight: bold;
+    }
+
+    /* Formulaire */
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+      background: #1c2347;
+      color: #f5f5f5;
+    }
+
+    button {
+      background: #d4af37;
+      color: #0a0f24;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #e6c45c;
     }
   </style>
 </head>
@@ -94,16 +148,27 @@
      Futur étudiant MBA Finance & Data Performance – ESLSCA</p>
 </header>
 
+<nav>
+  <a href="#presentation">Présentation</a>
+  <a href="#parcours">Parcours</a>
+  <a href="#formations">Formations</a>
+  <a href="#objectifs">Objectifs</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <div class="container">
 
-  <div class="section">
-    <h2>À propos</h2>
-    <p>Professionnel orienté data & finance, avec expérience en conformité bancaire (KYC / LCB‑FT), analyse de flux financiers et relation client. 
-       En transition vers un rôle Data Analyst Finance / Contrôle de gestion orienté data.</p>
+  <!-- 1. Présentation -->
+  <button class="accordion" id="presentation">Qui je suis</button>
+  <div class="panel">
+    <p>Je m'appelle <strong>Marcos Portela</strong>, professionnel orienté finance & data, avec une forte expérience en conformité bancaire (KYC / LCB‑FT), analyse de flux financiers et relation client.</p>
+    <p><strong>Email :</strong> marcos.portela@example.com</p>
+    <p><strong>LinkedIn :</strong> (à ajouter)</p>
   </div>
 
-  <div class="section">
-    <h2>Expérience professionnelle</h2>
+  <!-- 2. Parcours professionnel -->
+  <button class="accordion" id="parcours">Parcours professionnel</button>
+  <div class="panel">
     <ul>
       <li><strong>Assistant Service Client – Crédit Mutuel</strong> (2023–2025)</li>
       <li><strong>Gestionnaire Service Clients – CIC / Lyonnaise de Banque</strong> (2021–2023)</li>
@@ -111,44 +176,9 @@
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Formations</h2>
+  <!-- 3. Formations + compétences -->
+  <button class="accordion" id="formations">Formations & compétences</button>
+  <div class="panel">
     <ul>
-      <li><strong>MBA Finance & Data Performance – ESLSCA</strong> (rentrée 2026)</li>
-      <li><strong>BAC+3 Gestion des Affaires – UNIFG</strong> (diplôme reconnu ENIC‑NARIC)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Compétences</h2>
-    <div class="skills">
-      <span>Python</span><span>SQL</span><span>Power BI</span>
-      <span>KYC / LCB‑FT</span><span>Analyse financière</span>
-      <span>Relation client</span><span>Data Visualisation</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Projets</h2>
-    <ul>
-      <li><a href="https://marcosdsport.github.io/marcos-ai-portfolio/">Portfolio IA – projets data & IA</a></li>
-      <li><a href="https://github.com/marcosdsport">Voir tous mes projets GitHub</a></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>CV</h2>
-    <p>Consultez mon CV complet :</p>
-    <a class="cv-button" href="CV-Marcos-Portela.html">Voir mon CV</a>
-  </div>
-
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email : marcos.portela@example.com<br>
-       LinkedIn : <a href="#">Ton lien LinkedIn</a></p>
-  </div>
-
-</div>
-
-</body>
-</html>
+      <li><strong>MBA Finance & Data Performance – ESLSCA</strong> (2026)</li>
+      <li><strong>BAC
