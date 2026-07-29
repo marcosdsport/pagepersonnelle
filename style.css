@@ -1,4 +1,4 @@
-/* STYLE APPLE PREMIUM — Marcos Portela */
+/* STYLE APPLE DEEP BLUE — Marcos Portela */
 
 body {
   margin: 0;
@@ -8,41 +8,25 @@ body {
   line-height: 1.6;
 }
 
-header {
-  text-align: center;
-  padding: 120px 20px 80px;
-}
-
-header h1 {
-  font-size: 48px;
-  font-weight: 600;
-  color: #111;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 20px;
-  color: #555;
-}
-
+/* NAVIGATION APPLE */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #eee;
-  padding: 12px 0;
+  background: rgba(10, 20, 60, 0.85); /* bleu nuit translucide */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding: 14px 0;
   text-align: center;
   z-index: 1000;
 }
 
 nav a {
-  margin: 0 20px;
+  margin: 0 22px;
   text-decoration: none;
-  color: #333;
+  color: #f5f5f5;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   transition: 0.2s;
 }
 
@@ -50,39 +34,62 @@ nav a:hover {
   color: #d4af37; /* or premium */
 }
 
+/* HEADER */
+header {
+  text-align: center;
+  padding: 140px 20px 80px;
+  background: linear-gradient(to bottom, #0a143c, #ffffff);
+  color: #ffffff;
+}
+
+header h1 {
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+/* CONTAINER */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 40px 20px;
 }
 
+/* TITRES */
 .section-title {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #111;
+  color: #0a143c;
 }
 
+/* CARTES APPLE */
 .card {
-  background: #fafafa;
-  border: 1px solid #eee;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 25px;
+  background: #fdfdfd;
+  border: 1px solid #e5e5e5;
+  padding: 28px;
+  border-radius: 14px;
+  margin-bottom: 28px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
+/* BOUTONS */
 button, .btn {
   background: #d4af37;
   color: #fff;
-  padding: 12px 20px;
+  padding: 14px 22px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.2s;
@@ -92,15 +99,17 @@ button:hover, .btn:hover {
   background: #e6c45c;
 }
 
+/* FORMULAIRE */
 input, textarea {
   width: 100%;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 14px;
+  border-radius: 10px;
   border: 1px solid #ddd;
   margin-top: 10px;
   font-size: 16px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 40px;
