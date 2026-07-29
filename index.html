@@ -4,11 +4,41 @@
   <meta charset="UTF-8">
   <title>Marcos Portela – Présentation</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ANIMATIONS APPLE -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
+<nav class="fade-in fade-delay-1">
   <a href="index.html">Présentation</a>
   <a href="parcours.html">Parcours</a>
   <a href="formations.html">Formations</a>
@@ -16,26 +46,34 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<header>
+<header class="fade-in fade-delay-2">
   <h1>Marcos Portela</h1>
   <p>Finance • Conformité • Données • Processus<br>Parcours international — Brésil & France</p>
 </header>
 
-<div class="container">
+<div class="container fade-in fade-delay-3">
 
   <div class="card">
+    <img src="marcos.jpg" alt="Photo de Marcos Portela" class="profile-photo">
+
     <h2 class="section-title">Qui je suis</h2>
-    <p>Professionnel disposant d’un parcours international combinant banque, services financiers, administration publique et gestion de données.</p>
 
-    <p>Mon évolution suit un fil conducteur clair :</p>
-    <p><em>Relation client → Conseil financier → Analyse → Gestion administrative → Contrôle → Qualité des données → Services financiers spécialisés → Optimisation des processus</em></p>
+    <p><strong>Comprendre les enjeux. Relier les personnes. Transformer la complexité en solutions simples.</strong></p>
 
-    <p>Localisation : Lyon, France</p>
+    <p>Je m'appelle <strong>Marcos Portela</strong>. Originaire du Brésil et installé en France depuis plusieurs années, j'ai construit mon parcours autour d'une conviction simple : derrière chaque organisation, chaque projet ou chaque donnée, il y a avant tout des personnes.</p>
+
+    <p>La relation humaine a toujours été au cœur de mon parcours. J'aime écouter, comprendre les besoins de mes interlocuteurs et instaurer un climat de confiance. Pour moi, une bonne relation repose avant tout sur une communication claire, l'écoute et la volonté de trouver des solutions adaptées.</p>
+
+    <p>Mes expériences dans le secteur bancaire et les services financiers m'ont également appris à apprécier l'analyse, la rigueur et l'amélioration des processus. J'aime comprendre comment les organisations fonctionnent, structurer l'information et simplifier des situations parfois complexes pour faciliter la prise de décision.</p>
+
+    <p>Curieux de nature, je m'intéresse à l'économie, à la finance, à la technologie et à l'intelligence artificielle. J'aime apprendre en permanence, découvrir de nouveaux outils et devenir rapidement opérationnel dans un nouvel environnement.</p>
+
+    <p>Aujourd'hui, je recherche avant tout des projets qui me permettent de combiner ce qui me motive le plus : créer du lien, analyser, apprendre et contribuer à des solutions utiles, aussi bien pour les équipes que pour les clients.</p>
   </div>
 
 </div>
 
-<footer>
+<footer class="fade-in fade-delay-3">
   © 2026 — Marcos Portela
 </footer>
 
