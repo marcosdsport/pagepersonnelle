@@ -4,11 +4,32 @@
   <meta charset="UTF-8">
   <title>Parcours – Marcos Portela</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ANIMATIONS APPLE -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+    .fade-delay-4 { animation-delay: 0.8s; }
+  </style>
 </head>
 
 <body>
 
-<nav>
+<nav class="fade-in fade-delay-1">
   <a href="index.html">Présentation</a>
   <a href="parcours.html">Parcours</a>
   <a href="formations.html">Formations</a>
@@ -16,58 +37,104 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<header>
-  <h1>Parcours professionnel</h1>
-  <p>7 expériences — Brésil & France</p>
+<header class="fade-in fade-delay-2">
+  <h1>Mon parcours</h1>
+  <p>Entre Brésil et France — Banque, finance, conseil, administration</p>
 </header>
 
 <div class="container">
 
-  <div class="card">
-    <h2 class="section-title">Caixa Econômica Federal — Brésil</h2>
-    <p><strong>Attaché Commercial / Agent de Crédit</strong></p>
-    <p>Relation client, analyse financière, étude de solvabilité, gestion administrative, conformité documentaire.</p>
+  <!-- INTRODUCTION -->
+  <div class="card fade-in fade-delay-2">
+    <blockquote>
+      <strong>« Chaque expérience m'a appris un métier. Ensemble, elles m'ont appris à comprendre les organisations dans leur globalité. »</strong>
+    </blockquote>
+
+    <blockquote>
+      <em>Comprendre les organisations, connecter les personnes et transformer la complexité en solutions concrètes.</em>
+    </blockquote>
+
+    <p>Mon parcours s'est construit entre le Brésil et la France, au sein d'environnements aussi variés que la banque, les services financiers, l'administration publique et le conseil.</p>
+
+    <p>À première vue, ces expériences peuvent sembler différentes. Pourtant, elles répondent toutes à une même ambition : apporter des solutions utiles en conciliant les besoins des personnes, les objectifs de l'entreprise et les exigences opérationnelles.</p>
+
+    <p>Cette diversité m'a permis de développer une vision transversale des organisations. J'ai appris à m'adapter rapidement à de nouveaux environnements, à collaborer avec des interlocuteurs aux profils variés et à transformer des situations complexes en actions concrètes.</p>
   </div>
 
-  <div class="card">
-    <h2 class="section-title">Universidade Federal de Pernambuco</h2>
-    <p><strong>Analyste de données scientifiques</strong></p>
-    <p>Collecte, structuration, nettoyage et contrôle qualité des données.</p>
+  <!-- EXPERIENCES EN CARTES PREMIUM -->
+
+  <div class="card fade-in fade-delay-2">
+    <h2>🇫🇷 Mobilize Financial Services <span style="opacity:0.7;">(08/2025 – 11/2025)</span></h2>
+    <h3>La vision réseau</h3>
+    <p>J'ai assuré l'interface entre les partenaires commerciaux et les équipes internes afin de fluidifier les échanges, résoudre des situations complexes et contribuer à l'amélioration continue de la qualité de service.</p>
   </div>
 
-  <div class="card">
-    <h2 class="section-title">Prefeitura de Jaboatão dos Guararapes</h2>
-    <p><strong>Assistant de Coordination — Programme de Résidence Médicale</strong></p>
-    <p>Gestion administrative, suivi financier, contrôle documentaire, coordination entre services.</p>
+  <div class="card fade-in fade-delay-2">
+    <h2>🇫🇷 Crédit Mutuel Sud-Est <span style="opacity:0.7;">(03/2023 – 06/2025)</span></h2>
+    <h3>La polyvalence</h3>
+    <p>Cette expérience m'a permis d'accompagner les clients au quotidien, de garantir la fiabilité des opérations, d'assurer l'organisation d'agence et de veiller au respect des exigences réglementaires dans un environnement bancaire exigeant.</p>
   </div>
 
-  <div class="card">
-    <h2 class="section-title">MG Auditoria</h2>
-    <p><strong>BPO Financier — Stage</strong></p>
-    <p>Nettoyage de données financières, contrôle de cohérence, amélioration des processus.</p>
+  <div class="card fade-in fade-delay-3">
+    <h2>🇫🇷 CIC Lyonnaise de Banque <span style="opacity:0.7;">(09/2021 – 02/2023)</span></h2>
+    <h3>La rigueur</h3>
+    <p>Au sein du service Grandes Entreprises, j'ai développé une solide culture de la conformité en traitant des opérations financières sensibles dans le respect des procédures et de la maîtrise des risques.</p>
   </div>
 
-  <div class="card">
-    <h2 class="section-title">CIC Lyonnaise de Banque</h2>
-    <p><strong>Gestionnaire Service Client — Flux Grandes Entreprises</strong></p>
-    <p>Opérations entreprises, conformité, contrôle documentaire, support commercial.</p>
+  <div class="card fade-in fade-delay-3">
+    <h2>🇧🇷 MG Auditoria, Consultoria e Contabilidade <span style="opacity:0.7;">(2015 – 2016)</span></h2>
+    <h3>L'analyse</h3>
+    <p>J'ai participé au contrôle, à la fiabilisation et à l'analyse des données financières afin de garantir la qualité des informations comptables.</p>
   </div>
 
-  <div class="card">
-    <h2 class="section-title">Crédit Mutuel Sud-Est</h2>
-    <p><strong>Assistant Service Client — Référent Organisation & Comptabilité</strong></p>
-    <p>Relation client multicanal, opérations bancaires, incidents, conformité KYC/LCB‑FT, contrôle interne.</p>
+  <div class="card fade-in fade-delay-3">
+    <h2>🇧🇷 Prefeitura de Jaboatão dos Guararapes <span style="opacity:0.7;">(2017 – 2021)</span></h2>
+    <h3>La coordination</h3>
+    <p>J'ai piloté des processus administratifs et budgétaires en assurant la coordination entre les différents acteurs institutionnels et opérationnels.</p>
   </div>
 
-  <div class="card">
-    <h2 class="section-title">Mobilize Financial Services</h2>
-    <p><strong>Conseiller Relation Réseau</strong></p>
-    <p>Accompagnement du réseau automobile, suivi des dossiers, conformité, amélioration continue.</p>
+  <div class="card fade-in fade-delay-4">
+    <h2>🇧🇷 Universidade Federal de Pernambuco <span style="opacity:0.7;">(2016 – 2017)</span></h2>
+    <h3>La méthode</h3>
+    <p>Cette expérience a renforcé mon approche méthodique à travers la collecte, la structuration et l'exploitation de données fiables.</p>
+  </div>
+
+  <div class="card fade-in fade-delay-4">
+    <h2>🇧🇷 Caixa Econômica Federal <span style="opacity:0.7;">(2011 – 2013)</span></h2>
+    <h3>Les fondamentaux</h3>
+    <p>C'est au sein de l'une des principales institutions financières du Brésil que j'ai découvert les métiers du conseil bancaire, de l'analyse financière et de l'évaluation des risques, tout en développant le sens de l'écoute et de la relation de confiance avec les clients.</p>
+  </div>
+
+  <!-- CE QUE J'APPORTE -->
+  <div class="card fade-in fade-delay-4">
+    <h2>Ce que j'apporte aujourd'hui</h2>
+    <p>Au-delà de mes expériences, j'apporte une manière de travailler fondée sur l'écoute, l'analyse et la recherche de solutions.</p>
+
+    <ul>
+      <li>Créer rapidement des relations de confiance avec des interlocuteurs variés.</li>
+      <li>M'adapter à de nouveaux environnements et en saisir rapidement les enjeux.</li>
+      <li>Analyser les situations avec méthode afin de prendre des décisions éclairées.</li>
+      <li>Faire le lien entre les équipes, les processus et les données pour favoriser la collaboration.</li>
+      <li>Simplifier des problématiques complexes afin d'améliorer l'efficacité collective.</li>
+      <li>Apprendre rapidement, partager les connaissances et contribuer durablement à la réussite des projets.</li>
+    </ul>
+  </div>
+
+  <!-- CONVICTION FINALE -->
+  <div class="card fade-in fade-delay-4">
+    <h2>Une conviction qui m'accompagne</h2>
+    <p>Au fil de mon parcours, j'ai compris qu'une organisation performante ne repose pas uniquement sur ses processus ou ses outils, mais avant tout sur les femmes et les hommes qui les font vivre.</p>
+
+    <p>Qu'il s'agisse d'accompagner un client, de coordonner plusieurs équipes, d'analyser des données ou d'améliorer un processus, je garde toujours la même approche : écouter, comprendre, agir avec méthode et rechercher des solutions concrètes.</p>
+
+    <blockquote>
+      <strong>Je ne cherche pas simplement à occuper un poste. Je souhaite comprendre les enjeux, créer de la valeur et contribuer durablement à la réussite des équipes et des organisations avec lesquelles je m'engage.</strong>
+    </blockquote>
   </div>
 
 </div>
 
-<footer>
+<footer class="fade-in fade-delay-4">
   © 2026 — Marcos Portela
 </footer>
 
